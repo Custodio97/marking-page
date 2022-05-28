@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor0:#F20519;
+    --cor1:#D3D925;
+    --cor2:#F2D027;
+    --cor3:#F2F2F2;
+    --cor4:#F25050;
+}
+body{
+    font-family: 'Sora', sans-serif;
+    background: var(--cor3);
+}
+/*make header*/
+header{
+    background: url(../image/startae-team-7tXA8xwe4W4-unsplash.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+    height:30rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--cor3);
+    text-align: center;
+}
+header  h1{
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+/*create main of body*/
+main{
+    max-width:1473px;
+    width: 100%;
+    margin: auto;
+}
+/*make section*/
+section{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 40rem;
+}
+.container_section{
+display: flex;
+}
+.content{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    background: var(--cor3);
+   box-shadow: 0 1px 3px 2px rgba(55, 55, 55, 0.1) ;
+}
+.content i{
+    font-size: 2rem;
+    color: var(--cor0);
+}
+
+.article1{
+    background-image: url('../image/avel-chuklanov-DUmFLtMeAbQ-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container_article1{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.rect{
+    width: 400px;
+    height: 250px;
+    background: var(--cor3);
+    text-align: center;
+    line-height: 2rem;
+}
+.change_color{
+    color: var(--cor0);
+}
+.square{
+    width: 250px;
+    height: 250px;
+    background: var(--cor3);
+    margin: 1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.square i{
+    color: var(--cor0);
+    font-size: 2rem;
+}
+#parallax{
+    margin-top: 1em;
+    background: url('../image/leone-venter-VieM9BdZKFo-unsplash.jpg');
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 34rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+.contact{
+    background: rgb(19, 18, 18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 20rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2.1rem;
+}
+@media only screen and (max-width:900px) {
+    header{
+        width: 100%;
+        background-position: center;
+    }
+    section{
+        height: 50rem;
+    }
+    .container_section{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .content{
+        width: 150px;
+        height: 150px;
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .article1{
+        height: 50rem;
+        background-position:center ;
+    }
+    .container_article1{
+        flex-direction: column;
+    }
+    .rect{
+      width: 200px;
+      height: 250px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    .square{
+       width: 150px;
+       height: 150px;
+       font-size: 15px;
+       line-height: 20px;
+    }
+    #parallax{
+        background-position:left;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        line-height: 20px;
+        
+    }
+    .contact{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    html{
+        overflow-x:hidden ;
+    }
+}
+@media only screen and (max-width:300px){
+    header{
+        width: 100%;
+        background-position: center;
+    }
+    
+}
